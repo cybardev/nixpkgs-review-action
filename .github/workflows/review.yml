@@ -91,7 +91,7 @@ on:
         description: "Push to cache"
         required: true
         type: boolean
-        default: true
+        default: false
       upterm:
         description: "Start upterm session after nixpkgs-review"
         required: true
@@ -106,7 +106,7 @@ on:
         description: "What to do on review success"
         required: true
         type: choice
-        default: nothing
+        default: merge
         options:
           - nothing
           - mark_as_ready
